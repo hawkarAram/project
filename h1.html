@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+        }
+        .head{
+            background-color: rgb(29, 28, 28);
+            color: white;
+            text-align: center;
+        }
+        .sidebar{
+            background-color:rgb(46, 44, 44);
+            color: white;
+            padding-bottom: 50px;
+            display: flex;
+            
+            text-align: top;
+           
+        }
+        .section{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 75vh;
+            flex-wrap: wrap;
+           
+
+        }
+        h{
+            margin-top: 10px;
+        }
+        .tablee{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 350px;
+          
+           
+         
+        }
+        tr th {
+            border: 1px solid rgb(41, 38, 38);
+          
+        }
+        tr td{
+            border: 1px solid black;
+        }
+        .table{
+            border-left: 1px gray solid;
+            border-right: 1px gray solid;
+         padding-left: 200px;
+         padding-right: 200px;
+            
+        }
+        .th{
+            background-color: yellow;
+        }
+        .footerr{
+            background-color: rgb(46, 44, 44);
+            color: azure;
+            padding-bottom: 34px;
+            text-align: center;
+        }
+   
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <div class="head">
+        <p>header</p>
+    </div>
+    <div class="sidebar">
+       <p style="margin-left: 10px;">sidebar</p>
+    </div>
+    <div class="section">
+        <div>
+           <p><strong>section1</strong></p>
+        </div>
+        <div class="table">
+            <p style="margin-bottom: 30px; margin-left: 20px;"><b>section2</b></p>
+            <table class="tablee">
+                <tr class="tr th">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>age</th>
+                </tr>
+                <tr class="tr">
+                    <td>1</td>
+                    <td>Akar</td>
+                    <td>40</td>
+                </tr>
+                <tr class="tr">
+                    <td>2</td>
+                    <td>Awder</td>
+                    <td>35</td>
+                </tr>
+            </table>
+
+        </div>
+        <div style=" ">
+           <p>section3</p>
+        </div>
+    </div>
+    <div class="footerr"> <p><strong>footer</strong></p></div>
+</div>
+</body>
+
+</html>
